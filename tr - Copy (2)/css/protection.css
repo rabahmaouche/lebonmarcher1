@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+}
+
+@media only screen and (max-width:460px) {
+    header{
+        width: 100% !important;
+    }
+    section{
+        width: 100% !important;
+    }
+    .wallet{
+        margin-top: 25% !important;
+        margin-left: 20px !important;
+    }
+    .c-garantie{
+        margin: 10px !important;
+        width: 70%;
+    }
+    .c-garantie h1{
+        font-size: 23px !important;
+    }
+    .garantie-1{
+        display: block !important;
+        padding: 15px !important;
+    }
+    .garantie-1 div{
+        width: 80% !important;
+    }
+
+    main{
+        display: block !important;
+        width: 100% !important;
+    }
+    .box-back{
+        margin-top: 20px !important;
+        margin-left: 30% !important;
+    }
+    .c-box-back{
+        width: 100% !important;
+    }
+    .about-c{
+        margin: 10px !important;
+    }
+    
+    .about-c .follow{
+        margin-right: 50px !important;
+    }
+
+    .about-c .guide ,.service , .coll{
+        margin-right: 10px !important;
+    }
+
+    .information div{
+        margin-left: 20px !important;
+        width: 45% !important;
+    }
+    .main-footer ul li  .dress::after{
+        left: 64% !important;
+    }
+}
+header{
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(./lebonmarché\ \(150\ ×\ 150px\)\ \(1200\ ×\ 300px\).png);
+    height: 200px;
+    background-size:100% 100%;
+    background-position: center;
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.garantie{
+    display: flex;
+}
+
+
+.wallet{
+    background-color: #ebe9e9;
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.wallet img{
+    margin: 25px;
+}
+
+
+
+.c-garantie{
+    margin: 50px;
+    width: 50%;
+}
+
+
+.c-garantie h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.c-garantie p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(75, 74, 74);
+}
+
+/*hr*/
+section hr{
+    width: 80%;
+    margin: auto;
+}
+
+
+/*garantie 1*/
+.garantie-1{
+    display: flex;
+    justify-content: center;
+}
+
+
+.garantie-1 div{
+    width: 20%;
+    margin: 30px;
+}
+
+
+.garantie-1 div h1{
+    font-size: 23px;
+    margin-bottom: 25px ;
+}
+
+
+.garantie-1 p{
+    color: grey;
+}
+
+/*main*/
+
+main{
+    width: 80%;
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.box-back{
+    margin-right: 50px;
+    margin-left: 100px;
+    margin-top: 25%;
+}
+
+.c-box-back{
+    width: 60%;
+}
+
+.c-box-back h1{
+    font-size: 23px;
+    color: rgb(55, 54, 54);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* 24/7 question */
+.question{
+    width: 80%;
+    margin: 0 auto 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.question h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.question a{
+    margin: auto;
+    text-decoration: none;
+    color: grey;
+    margin-top: 10px;
+}
+
+.question a:hover{
+    color: rgb(242, 105, 105);
+    text-decoration: underline;
+}
+
+/*footer*/
+footer{
+    display: block;
+    background-color: #e4e4e4;
+}
+
+footer .about::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}
+footer .about ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #e4e4e4;
+}
+
+footer .about ul li {
+    width: 200px;
+    margin: 50px auto;
+}
+
+footer .about ul li{
+    text-align: center;
+}
+
+
+footer .about ul li h5{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 25px;
+}
+
+
+/*follow*/
+.about-c{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    background-color: #e4e4e4;
+}
+
+.about-c .follow{
+    margin-right: 400px;
+    font-size: 18px;
+}
+.about-c .follow i{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right:5px ;
+    color: black;
+}
+
+/*guide*/
+.about-c .guide ,.service , .coll{
+    margin-right: 70px;
+    font-size:18px ;
+}
+
+.about-c .guide a,.service a, .coll a{
+    text-decoration: none;
+    font-size: 15px;
+    color: grey;
+}
+
+/*for information*/
+.information{
+    width: 100%;
+    background-color: #e4e4e4;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.information div{
+    width: 35%;
+    margin-left: 200px;
+}
+
+.information div h6{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.information  a{
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    color: grey;
+}
+
+.information div a:hover{
+    color:orange;
+}
+
+/*info*/
+
+.info-1{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.info-1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.info-1 span{
+    color: white;
+}
+
+
+

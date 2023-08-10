@@ -1,0 +1,2338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width:460px){
+    
+    .recherche-1{
+        display: block !important;
+        width: 100% !important;
+    }
+    .search-key{
+        margin: 10px !important;
+        overflow: hidden !important;
+    }
+    #img{
+        margin-left:27% !important;
+    }
+    .fa-cart-shopping{
+        display: none !important;
+    }
+    .recherche-2{
+        display: none;
+    }
+    #search-key{
+        width: 370px !important;
+    }
+    .section{
+        display: none !important;
+    }
+    .bienvenue{
+        display: none !important;
+    }
+    .deal-de-jour{
+        width: 100% !important;
+    }
+    #prod1{
+        display: none !important;
+    }
+    
+    #les-plus{
+        display: none !important;
+    }
+    
+    .deal-de-jour{
+        border-radius: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+    .plus{
+        width: 100% !important;
+        border-radius: 0 !important;
+        padding: 0px !important;
+
+    }
+    .pour-vous h1::after{
+        width: 50px !important;
+    }
+    .pour-vous h1::before{
+        width: 50px !important;
+        left: 5.5% !important;
+    }
+    .main-product{
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    .main-product1{
+        width: 45% !important;
+        margin: 10px !important;
+    }
+    .main-product1 a strong{
+        margin-right: 0 !important;
+    }
+
+    .about-c{
+        margin: 10px !important;
+    }
+    
+    .about-c .follow{
+        margin-right: 50px !important;
+    }
+
+    .about-c .guide ,.service , .coll{
+        margin-right: 10px !important;
+    }
+
+    .information div{
+        margin-left: 20px !important;
+        width: 45% !important;
+    }
+    .main-footer ul li  .dress::after{
+        left: 64% !important;
+    }
+    .menu{
+        display: block !important;
+        justify-content: space-between !important;
+        padding: 10px !important;
+    }
+    .menu .m1{
+        opacity: 1 !important; 
+        margin-bottom:20px !important ;
+    }
+    .menu ul {
+        display: none !important;
+    }
+    .menu:hover  ul{
+        display: block !important;
+        margin-top: 10px !important;
+    }
+    .menu-1, .Aide1, .fa-caret-down, .compte-1{
+        display: none !important;
+    }
+    
+
+  
+
+}
+
+@media only screen and (max-width: 767px) {
+    .form3 {
+      width: 100% !important;
+      height: 100vh !important;
+      margin: 0 !important;
+      border-radius: 0 !important;
+      box-shadow: none;
+    }
+    .form3 h1{
+        margin: 50px auto 20px !important;
+    }
+    .form3 p{
+        margin-bottom: 60px !important;
+    }
+    .form3 input[type="email"]{
+        margin-bottom: 30px !important;
+    }
+    .form3 input[type="submit"]{
+        margin-top: 40px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    
+  }
+
+@media only screen and (max-width: 1430px){
+    .menu ul li:hover .compte-1{
+        transform: translate(-60%, 0) !important;
+    }
+
+    .categories .modefemme:hover .cmodefemme, .modehomme:hover .cmodehomme , .phone:hover .cphone, .pc:hover .cpc, .device:hover .cdevice , .montre:hover .cmontre, .maison:hover .cmaison, .sac:hover .csac, .game:hover .cgame, .activity:hover .cactivity , .beauty:hover .cbeauty, .Auto:hover  .cAuto , .tool:hover  .ctool{
+        transform: translate(-4%, 0) !important;
+    }
+
+    .categories h1{
+        margin-bottom: 7px;
+    }
+
+    .categories .modefemme-1 , .modehomme-1, .phone-1, .pc-1 ,.device-1, .montre-1, .maison-1, .sac-1, .game-1, .activity-1, .beauty-1, .Auto-1, .tool-1{
+        background-color: white;
+        padding: 7px 2px;
+    }
+
+    
+    .section {
+        width: 95% !important;
+    }
+}
+  
+
+
+.form3 a i{
+    color: rgb(130, 129, 129);
+    font-size: 24px;
+    margin: 20px 10px;
+    float: right; 
+}
+
+.form3 #iconx i:hover{
+    color: #424141;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2600px;
+    background-color: rgba(0, 0, 0, 0.7); /* Black color with 50% opacity */
+    z-index: 9999;
+    display: none;
+}
+
+
+.form3{
+    background-color: #fff;
+    width: 400px;
+    
+    position: fixed;
+    margin:  7% 37%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid rgb(205, 205, 205 , 0.5);
+    box-shadow:0 0 10px rgb(205, 205, 205 , 0.5);
+    z-index: 9999;
+    display: none;
+}
+
+.form3 h1{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0b0b0b;
+    width: 100px;
+    margin: 50px auto;
+    height: 25px;
+    position: relative;
+}
+
+
+
+.form3 p{
+    color: #0a0a0a;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 10px;
+   
+
+}
+
+
+.form4{
+    padding-left: 25px;
+    
+}
+.form4 input {
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color:#fff ;
+    
+}
+
+label span{
+    float: right;
+    margin-right: 30px;
+    font-size: 13px;
+}
+.form4 input[type="text"]{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    font-size: 16px;
+    outline: none;
+    padding-left: 2px;
+}
+
+.form4 input[type="email"]{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    font-size: 16px;
+    outline: none;
+    padding-left: 2px;
+}
+
+
+.form4 input[type="password"]{
+    margin-bottom: 1px;
+    border: 1px solid black;
+    font-size: 16px;
+    outline: none;
+    padding-left: 2px;
+
+}
+
+.form4 a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: #6b44f9;
+    
+}
+
+.form4 a:hover{
+    color: blue;
+}
+
+.form4 input[type="submit"]{
+    background-color: rgb(80, 80, 245);
+    color: #fff;
+    border: 1px solid #3904fb;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.form4 input[type="submit"]:hover{
+    background-color: #3904fb;
+    
+}
+
+.form4 .voulez{
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-left: 55px;
+
+}
+
+
+/*social-media*/
+.form4 .social{
+    width: 80%;
+    margin: 35px auto;
+    justify-content: center;
+}
+
+.form4 .social a{
+    display: inline-flex;
+    width: 40%;
+    height: 40px;
+    background-color:#f2f2f2;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 2 2 rgb(0, 0, 0,0.5);
+
+}
+
+.form4 .social .fa-google{
+    font-size: 20px;
+    color: rgb(247, 110, 110);
+}
+.form4 .fa-facebook{
+    color: #3B5998;
+    font-size: 20px;
+}
+.form4 .fa-google:hover{
+    color: red;
+}
+.form4 .social a:hover{
+    background-color: #ddd;
+}
+
+
+
+/*for menu*/
+.publiciter{
+    width: 100%;
+    height: 80px;
+    background-color: aqua;
+
+}
+
+
+.menu{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+}
+.menu .m1 {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    opacity: 0;
+}
+
+
+
+.menu ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+
+.menu  li{
+    position: relative;
+    padding: 10px 25px 10px 10px;
+    margin-right: 5px;
+}
+
+
+.menu ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu ul li #useracount {
+    font-weight: bold;
+}
+
+
+.menu ul li a:hover{
+    color: red;
+}
+
+
+.fa-caret-down{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    position: absolute;
+    left: 172px;
+    padding-top: 8px;
+}
+
+#menu:hover .fa-caret-down{
+    transform: rotate(180deg);
+    transform-origin: center;
+    top: 18px;
+}
+
+#menu:hover{
+    background-color: white;
+}
+
+
+/*for first menu1*/
+
+
+.menu-1{
+    display: none;
+}
+
+
+.menu ul #menu:hover .menu-1{
+    position: absolute;
+    display:block ;
+    top: 100%;
+    left: 0;
+    width: 189px;
+    box-shadow: 0px 2px 2px 2px rgba(213, 211, 211, 0.5);
+    z-index: 9998;
+}
+
+
+.menu-1 ul{
+    display: block;
+
+}
+
+
+.menu-1 ul li {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 60px 5px 10px;
+    width: 189px;
+    transition: all 0.3s;
+}
+
+
+.menu-1 ul li a:hover{
+    color: black;
+}
+
+
+.menu-1 ul li:hover{
+    background-color: #fafafa;
+}
+
+
+/*for paramètre*/
+
+
+#paramètre::after{
+    content: "";
+    position: absolute;
+    background-color:#ccc;
+    width: 1px;
+    height: 16px;
+    right: 0;
+}
+
+
+#paramètre::before{
+    content: "";
+    position: absolute;
+    background-color:#ccc;
+    width: 1px;
+    height: 16px;
+    left: 0;   
+}
+
+
+/* for aide*/
+
+
+#Aide:hover{
+    background-color: white;
+}
+
+
+#cart{
+    font-size: 0.8rem;
+    position: absolute;
+    left: 42px;
+    padding-top: 8px;  
+}
+
+
+.menu ul li:hover .fa-caret-down{
+    transform: rotate(180deg);
+    transform-origin: center;
+    top: 18px;
+}
+
+
+.Aide1{
+    display: none;
+}
+
+
+.menu ul #Aide:hover .Aide1{
+    position: absolute;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    top: 100%;
+    left: 0px;
+    width: 230px;
+    z-index: 9998 !important;
+
+}
+
+
+.Aide1 ul{
+    display: block;
+    box-shadow: 0px 2px 2px 2px rgba(213, 211, 211, 0.5);
+}
+
+
+.Aide1 ul li a:hover{
+    color: black;
+}
+
+
+.Aide1 ul li:hover {
+    background-color: #ccc;
+    width: 230px;
+}
+
+
+/*app*/
+
+
+#app{
+    padding-right: 5px;
+}
+
+
+#app:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+/*for mes favoris*/
+
+
+#mf{
+    padding-right: 5px;
+}
+
+
+#mf:hover{
+    color: red;
+}
+
+
+
+
+.card-product{
+    position: absolute;
+    background-color:#fafafa;
+    box-shadow:0 5px 5px 5px #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 150px;
+    transform: translate(-15%, 0);
+    z-index: 9998;
+    top: 40px;
+    display: none;
+
+}
+.card-product p{
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px 5px 0px;
+    text-align: start;
+}
+
+.card-product p:hover{
+    background-color: #ccc;
+}
+
+.card-product #view-product{
+    font-size: 15px;
+    font-weight: 700;
+    color: #6840f7;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 2px;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #0b0b0b;
+}
+
+
+/*for compte*/
+
+
+#compte{
+    padding-right: 5px;
+}
+
+
+#compte:hover{
+    color: red;
+}
+
+
+.compte-1{
+    display: none;
+}
+
+
+.menu ul li:hover .compte-1{
+    position: absolute;
+    display: block;
+    top: 100%;
+    left:0;
+    width: 250px;
+    align-content: center;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-shadow:0 5px 5px 5px #ccc;
+    background-color: #fafafa;
+    z-index: 9999;
+}
+
+
+/*for compte-1 */
+
+
+p{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    color: #000;
+}
+
+
+.compte-1 button{
+    background-color: rgb(239, 138, 138);
+    width: 100px;
+    height: 30px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+#sinscrire{
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(237, 81, 81);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+
+#sinscrire:hover{
+    transform: scale(1.1);
+}
+
+.compte-1 .line{
+    position: absolute;
+    width: 214px;
+    height: 1px;
+    background-color: #ccc;
+    top: 36%;
+    left: 20px; 
+}
+
+
+#sinscrire1{
+    color: rgb(236, 15, 15);
+    background-color: rgb(248, 189, 189);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+
+#sinscrire1:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+.compte-1 ul{
+    display: none;
+    margin-bottom: 10px;
+}
+
+
+.compte-1 ul li{
+    padding: 7px 70px 7px 20px;
+    width: 250px;
+    cursor: pointer;
+}
+
+
+.compte-1 ul li:hover{
+    background-color: white;
+}
+
+
+.compte-1 ul li a:hover{
+    color: black;
+}
+
+
+#compte:hover{
+    background-color: white;
+}
+
+/* recherche*/
+
+
+.recherche{
+    margin: 0;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+    z-index: 8999;
+    padding-top: 10px;
+   
+}
+
+.recherche-1{
+    width: 80%;
+    margin:  auto;
+    display: flex;
+}
+
+.recherche-1 .shoping-card{
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    text-decoration: none;
+    position: relative;
+}
+
+.recherche-1 .shoping-card #shoping-card-n{
+    background-color: rgb(254, 55, 55);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: -9px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+
+
+#img{
+    width: 200px;
+    height: 50px;
+    margin-right: 70px;
+}
+
+/*for search*/
+.search-key{
+    position: relative;
+    background-color: rgb(235, 200, 0);
+    padding: 5px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#search-key{
+    width: 600px;
+    margin-right: 30px;
+    height: 30px;
+    border: none;
+    padding-left: 2px;
+    outline: none;
+    position: relative;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    color: red;
+    top: 17px;
+    right: 10px;
+    
+}
+
+
+.fa-magnifying-glass:hover{
+    transform: scale(1.1);
+}
+
+
+.fa-cart-shopping{
+    position: absolute;
+    padding-top: 23px;
+    padding-left: 35px;
+    color: red;
+}
+/*recherche-2*/
+.recherche-2{
+    background-color: #fafafa;
+}
+
+.recherche-2 ul{
+    justify-content: center;
+    list-style: none;
+    display: flex;
+}
+
+.recherche-2 ul li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    padding: 2px 5px;
+    margin-right: 2px;
+}
+.recherche-2 ul li::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #ccc;
+    margin-left: 4px;
+}
+.recherche-2 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.recherche-2 ul li a:hover{
+    color: red;
+}
+
+/*section*/
+section{
+    background-color: #e4e4e4;
+    display: block;
+
+}
+/* for section categories*/
+
+.section{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height:640px;
+}
+.categories{
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    width: 200px;
+    height: 568px;
+    top: 20px;
+    border-radius: 5px;
+    box-shadow:0 0 5px #ccc;
+    margin-right: 2px;
+    z-index: 8998;
+}
+h1 .fa-bars{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.categories h1{
+    margin-bottom: 10px;
+}
+.categories h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.categories .modefemme-1 , .modehomme-1, .phone-1, .pc-1 ,.device-1, .montre-1, .maison-1, .sac-1, .game-1, .activity-1, .beauty-1, .Auto-1, .tool-1{
+    background-color: white;
+    padding: 10px 4px;
+}
+.categories .modefemme-1 a, .modehomme-1 a, .phone-1 a, .pc-1 a, .device-1 a, .montre-1 a,.maison-1 a, .sac-1 a, .game-1 a, .activity-1 a, .beauty-1 a, .Auto-1 a, .tool-1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #545252;
+    text-decoration: none;
+}
+.categories .modefemme-1 a:hover, .modehomme-1 a:hover, .phone-1 a:hover, .pc-1 a:hover, .device-1 a:hover, .montre-1 a:hover, .maison-1 a:hover, .sac-1 a:hover, .game-1 a:hover, .activity-1 a:hover, .beauty-1 a:hover, .Auto-1 a:hover, .tool-1 a:hover{
+    color: red;
+    font-weight: bold;
+    transform: scaleX(1.1);
+}
+
+.categories .modefemme-1:hover , .modehomme-1:hover, .phone-1:hover, .pc-1:hover, .device-1:hover, .montre-1:hover, .maison-1:hover, .sac-1:hover, .game-1:hover, .activity-1:hover, .beauty-1:hover, .Auto-1:hover, .tool-1:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 3px #ccc;
+}
+/*mode femme*/
+.modefemme-1 .fa-solid{
+    margin-right: 5px;
+    margin-left: 3px;
+}
+
+.cmodefemme{
+    display: none;
+}
+.categories .modefemme:hover .cmodefemme{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.modefemme-2 ,.modefemme-3, .modefemme-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+}
+.modefemme-2 h1 a,.modefemme-3 h1 a, .modefemme-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.modefemme-2 h1 a:hover,.modefemme-3 h1 a:hover, .modefemme-4 h1 a:hover{
+    color: red;
+}
+
+.modefemme-2 ul ,.modefemme-3 ul, .modefemme-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.modefemme-2 ul li a,.modefemme-3 ul li a, .modefemme-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.modefemme-2 ul li a:hover,.modefemme-3 ul li a:hover, .modefemme-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+/*mode homme*/
+.modehomme-1 .fa-solid{
+    margin-right: 4px;
+}
+.cmodehomme{
+    display: none;
+}
+.categories .modehomme:hover .cmodehomme{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+    z-index: 2;
+}
+.modehomme-2 ,.modehomme-3, .modehomme-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.modehomme-2 h1 a,.modehomme-3 h1 a, .modehomme-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.modehomme-2 h1 a:hover,.modehomme-3 h1 a:hover, .modehomme-4 h1 a:hover{
+    color: red;
+}
+
+.modehomme-2 ul ,.modehomme-3 ul, .modehomme-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.modehomme-2 ul li a,.modehomme-3 ul li a, .modehomme-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.modehomme-2 ul li a:hover,.modehomme-3 ul li a:hover, .modehomme-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*phone*/
+.cphone{
+    display: none;
+}
+.categories .phone:hover .cphone{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.phone-2 ,.phone-3, .phone-4{
+    width: 220px;
+    height: 450px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.phone-2 h1 a,.phone-3 h1 a, .phone-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.phone-2 h1 a:hover,.phone-3 h1 a:hover, .phone-4 h1 a:hover{
+    color: red;
+}
+
+.phone-2 ul ,.phone-3 ul, .phone-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.phone-2 ul li a,.phone-3 ul li a, .phone-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.phone-2 ul li a:hover,.phone-3 ul li a:hover, .phone-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*pc*/
+.pc-1 .fa-solid{
+    margin-right: 4px;
+}
+.cpc{
+    display: none;
+}
+.categories .pc:hover .cpc{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.pc-2 ,.pc-3, .pc-4{
+    width: 220px;
+    height: 480px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.pc-2 h1 a,.pc-3 h1 a, .pc-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.pc-2 h1 a:hover,.pc-3 h1 a:hover, .pc-4 h1 a:hover{
+    color: red;
+}
+
+.pc-2 ul ,.pc-3 ul, .pc-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.pc-2 ul li a,.pc-3 ul li a, .pc-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.pc-2 ul li a:hover,.pc-3 ul li a:hover, .pc-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*device*/
+
+.device-1 .fa-solid{
+    margin-right: 6px;
+}
+
+.cdevice{
+    display: none;
+}
+.categories .device:hover .cdevice{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.device-2 ,.device-3, .device-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.device-2 h1 a,.device-3 h1 a, .device-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.device-2 h1 a:hover,.device-3 h1 a:hover, .device-4 h1 a:hover{
+    color: red;
+}
+
+.device-2 ul ,.device-3 ul, .device-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.device-2 ul li a,.device-3 ul li a, .device-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.device-2 ul li a:hover,.device-3 ul li a:hover, .device-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*montre*/
+.montre-1 .fa-solid{
+    margin-right: 5px;
+}
+
+.cmontre{
+    display: none;
+}
+.categories .montre:hover .cmontre{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.montre-2 ,.montre-3, .montre-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.montre-2 h1 a,.montre-3 h1 a, .montre-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.montre-2 h1 a:hover,.montre-3 h1 a:hover, .montre-4 h1 a:hover{
+    color: red;
+}
+
+.montre-2 ul ,.montre-3 ul, .montre-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.montre-2 ul li a,.montre-3 ul li a, .montre-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.montre-2 ul li a:hover,.montre-3 ul li a:hover, .montre-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*maison*/
+
+.maison-1 .fa-solid{
+    margin-right: 7px;
+}
+
+.cmaison{
+    display: none;
+}
+.categories .maison:hover .cmaison{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.maison-2 ,.maison-3, .maison-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.maison-2 h1 a,.maison-3 h1 a, .maison-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.maison-2 h1 a:hover,.maison-3 h1 a:hover, .maison-4 h1 a:hover{
+    color: red;
+}
+
+.maison-2 ul ,.maison-3 ul, .maison-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.maison-2 ul li a,.maison-3 ul li a, .maison-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.maison-2 ul li a:hover,.maison-3 ul li a:hover, .maison-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*sac*/
+
+.sac-1 .fa-solid{
+    margin-right: 8px;
+}
+
+.csac{
+    display: none;
+}
+.categories .sac:hover .csac{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.sac-2 ,.sac-3, .sac-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.sac-2 h1 a,.sac-3 h1 a, .sac-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.sac-2 h1 a:hover,.sac-3 h1 a:hover, .sac-4 h1 a:hover{
+    color: red;
+}
+
+.sac-2 ul ,.sac-3 ul, .sac-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.sac-2 ul li a,.sac-3 ul li a, .sac-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.sac-2 ul li a:hover,.sac-3 ul li a:hover, .sac-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*game*/
+
+.game-1 .fa-solid{
+    margin-right: 10px;
+}
+
+.cgame{
+    display: none;
+}
+.categories .game:hover .cgame{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.game-2 ,.game-3, .game-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.game-2 h1 a,.game-3 h1 a, .game-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.game-2 h1 a:hover,.game-3 h1 a:hover, .game-4 h1 a:hover{
+    color: red;
+}
+
+.game-2 ul ,.game-3 ul, .game-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.game-2 ul li a,.game-3 ul li a, .game-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.game-2 ul li a:hover,.game-3 ul li a:hover, .game-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*activity*/
+
+.activity-1 .fa-solid{
+    margin-right: 5px;
+}
+
+.cactivity{
+    display: none;
+}
+.categories .activity:hover .cactivity{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.activity-2 ,.activity-3, .activity-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.activity-2 h1 a,.activity-3 h1 a, .activity-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.activity-2 h1 a:hover,.activity-3 h1 a:hover, .activity-4 h1 a:hover{
+    color: red;
+}
+
+.activity-2 ul ,.activity-3 ul, .activity-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.activity-2 ul li a,.activity-3 ul li a, .activity-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.activity-2 ul li a:hover,.activity-3 ul li a:hover, .activity-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*beauty*/
+
+.beauty-1 .fa-solid{
+    margin-right: 5px;
+}
+
+.cbeauty{
+    display: none;
+}
+.categories .beauty:hover .cbeauty{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.beauty-2 ,.beauty-3, .beauty-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.beauty-2 h1 a,.beauty-3 h1 a, .beauty-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.beauty-2 h1 a:hover,.beauty-3 h1 a:hover, .beauty-4 h1 a:hover{
+    color: red;
+}
+
+.beauty-2 ul ,.beauty-3 ul, .beauty-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.beauty-2 ul li a,.beauty-3 ul li a, .beauty-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.beauty-2 ul li a:hover,.beauty-3 ul li a:hover, .beauty-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*Auto*/
+
+.Auto-1 .fa-solid{
+    margin-right: 7px;
+}
+
+.cAuto{
+    display: none;
+}
+.categories .Auto:hover .cAuto{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.Auto-2 ,.Auto-3, .Auto-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.Auto-2 h1 a,.Auto-3 h1 a, .Auto-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.Auto-2 h1 a:hover,.Auto-3 h1 a:hover, .Auto-4 h1 a:hover{
+    color: red;
+}
+
+.Auto-2 ul ,.Auto-3 ul, .Auto-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.Auto-2 ul li a,.Auto-3 ul li a, .Auto-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.Auto-2 ul li a:hover,.Auto-3 ul li a:hover, .Auto-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*tool*/
+
+.tool-1 .fa-solid{
+    margin-right: 7px;
+}
+
+.ctool{
+    display: none;
+}
+.categories .tool:hover .ctool{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 700px;
+    max-height: 700px;
+    padding: 10px;
+    left: 200px;
+    top: 0;
+    z-index: 9998;
+    border-radius: 10px;
+    box-shadow:0 0 5px #ccc ;
+}
+.tool-2 ,.tool-3, .tool-4{
+    width: 220px;
+    max-height: 600px;
+    background-color: white;
+    margin-right: 20px;
+    z-index: 9999;
+}
+.tool-2 h1 a,.tool-3 h1 a, .tool-4 h1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.tool-2 h1 a:hover,.tool-3 h1 a:hover, .tool-4 h1 a:hover{
+    color: red;
+}
+
+.tool-2 ul ,.tool-3 ul, .tool-4 ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.tool-2 ul li a,.tool-3 ul li a, .tool-4 ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #545252;
+    line-height: 25px;   
+}
+.tool-2 ul li a:hover,.tool-3 ul li a:hover, .tool-4 ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+/*for pub section*/
+
+.pub-ads{
+    display: block;
+    margin-top: 20px;
+    width: 770px;
+    height: 610px;
+    margin-left: 5px;
+    
+}
+.up-pub{
+    width: 100%;
+}
+.up-pub a{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    transition: all 0.3s;
+
+    
+}
+.up-pub a:hover{
+    color: red;
+}
+
+/*for image pub*/
+.pub-img{
+    width: 100%;
+    height: 350px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: url(/image/Dark\ Futuristic\ Wave\ Lines\ Desktop\ Background\ \(2\).png);
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+/* for pub product*/
+
+.pub-product{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, rgb(251, 141, 6) 0%, rgb(216, 100, 16) 25%, red 100% );
+    background-attachment: fixed;
+    border-radius: 5px;
+    
+}
+
+.pub-product .offre{
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.pub-product .offre a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(244, 231, 231);
+    text-decoration: none;
+}
+
+.pub-product .cpub-product{
+    width: 500px;
+    height: 160px;
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+}
+
+.pub-product .cpub-product .product-1{
+    display: block;
+    width: 120px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.pub-product .cpub-product .price{
+    position: relative;
+    padding: 2px 10px;
+    background-color: red;
+    border-radius: 20px;
+    margin-left: 35px;
+    top: 0;
+    text-decoration: none;
+    color: white;  
+}
+
+.pub-product .cpub-product .deleted-price{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin-left: 50px;
+}
+/* for right login (bienvenue)*/
+
+.bienvenue{
+    display: block;
+    margin-top: 50px;
+    width: 200px;
+    height: 450px;
+    margin-left: 2px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow:0 0 5px #ccc ;
+
+}
+
+.bienvenue .login{
+    width: 200px;
+    height: 100px;
+    background-image: url(/image/Blue\ Gradient\ Corporate\ Background\ Canva\ Banner.jpg);
+    background-size: 100% 100%;
+}
+.login-1{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+.bnv{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.submite {
+    display: flex;
+    margin-top: 20px;
+
+}
+.submite a{
+    font-weight: 500;
+    padding: 5px 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, rgb(251, 141, 6) 0%, rgb(216, 100, 16) 25%, red 100% );
+    border-radius: 30px;
+}
+
+.login-pub{
+    width: 180px;
+    height: 230px;
+    background:linear-gradient(to bottom, rgb(251, 141, 6) 0%, rgb(216, 100, 16) 25%, red 100% ) ;
+    margin: 5px;
+    border-radius: 5px;
+    display: block;
+    padding-left: 10px;
+}
+
+
+.login-pub1 .pub2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+} 
+
+.login-pub1 .pub3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.login-pub2{
+    display: flex;
+    margin-top: 60px;
+    width: 150px;
+    padding-left: 10px;
+}
+
+.login-pub2 .pub1 , .login-pub2 .pub2{
+    width: 60px;
+    height: 80px;
+    margin-right: 5px;
+    background-image: url(/image/Dark\ Futuristic\ Wave\ Lines\ Desktop\ Background\ \(2\).png );
+    background-size: 100% 100%;
+
+}
+
+.login-pub2 .pub1 a, .login-pub2 .pub2 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight:600 ;
+    color: white;
+    text-decoration: none;
+    padding: 2px 5px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+/*deal de jour*/
+
+.deal-de-jour{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: block;
+    padding: 10px 5px 5px 5px;
+    margin-bottom: 20px;
+
+}
+
+.cdeal-de-jour{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cdeal-de-jour a{
+    text-decoration: none;
+    padding-top: 10px;
+    color: rgb(97, 95, 95);
+    font-size: 24px;
+    font-weight: 200;
+}
+.cdeal-de-jour a span{
+    text-decoration: none;
+    padding-top: 10px;
+    color: black;
+    font-size: 16px;
+    margin-right: 15px;
+    text-decoration: underline;
+}
+.cdeal-de-jour a span:hover{
+    color: red;
+}
+
+
+
+.deal-product{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    padding-left: 15px;
+}
+
+
+.cdeal-product{
+    width: 180px;
+    height: 230px;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.cdeal-product img{
+    width: 180px;
+    height: 170px;
+}
+
+
+.cdeal-product a{
+    text-decoration: none;
+    display: flex;
+}
+
+
+.cdeal-product a h3{
+    font-weight: bold;
+    margin-left: 10px;
+    color: red;
+    font-size: 24px;
+}
+
+
+.cdeal-product a del{
+    margin: 8px;
+    color: black;
+
+}
+
+/*plus*/
+
+.plus{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: block;
+    padding: 10px 5px 5px 5px;
+
+}
+
+.cplus{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cplus a{
+    display: flex;
+    text-decoration: none;
+    padding-top: 10px;
+    color: rgb(97, 95, 95);
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.cplus a h2{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 15px;
+}
+
+
+.cplus a span{
+    text-decoration: none;
+    padding-top: 10px;
+    color: black;
+    font-size: 16px;
+    margin-right: 15px;
+    text-decoration: underline;
+}
+.cplus a span:hover{
+    color: red;
+}
+
+
+
+.plus-product{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    padding-left: 15px;
+}
+
+
+.cplus-product{
+    width: 180px;
+    height: 230px;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.cplus-product img{
+    width: 180px;
+    height: 170px;
+}
+
+
+.cplus-product a{
+    text-decoration: none;
+    display: flex;
+}
+
+
+.cplus-product a h3{
+    font-weight: bold;
+    margin-left: 10px;
+    color: red;
+    font-size: 24px;
+}
+
+
+.cplus-product a del{
+    margin: 8px;
+    color: black;
+
+}
+
+/*article*/
+article{
+    display: block;
+    width: 100%;
+    background-color: #e4e4e4;
+    padding-top: 30px;
+}
+/*pour vous*/
+.pour-vous{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pour-vous h1{
+    font-size: 24px;
+    font-weight: 550;
+}
+
+.pour-vous h1::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: grey;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.pour-vous h1::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: grey;
+    margin-top: 20px;
+    left: 27%;
+}
+
+
+/*main product*/
+main{
+    display: block;
+}
+.main-product{
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-product1{
+    width: 185px;
+    height: 330px;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main-product1 .fa-regular{
+   float: right;
+   margin-right: 5px;
+   cursor: pointer;
+   font-size: 20px;
+
+}
+.main-product1 button{
+    float: right;
+   margin-right: 5px;
+   cursor: pointer;
+   font-size: 20px;
+}
+
+.main-product1 img{
+    width: 185;
+    height: 160px;
+}
+
+.main-product1 a{
+    text-decoration: none;
+    color: red;
+}
+
+.main-product1 a strong{
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.main-product1 a del{
+    color: black;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.main-product1 span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.main-product1 a h6{
+
+    width: 50%;
+    color: #ffffff;
+    background-color: red;
+    padding: 2px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.main-product1 a .sp-0{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.main-product1 a  .sp-1{
+    font-size: 0.8rem;
+    color: black;
+}
+
+.main-product1 a  .sp-2{
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.main-product1 a  .sp-3{
+    margin-left: 10px;
+    color: rgb(34, 255, 0);
+}
+
+/*main footer*/
+
+.main-footer{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+.main-footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer ul li{
+    padding: 2px 10px;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.main-footer ul li a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+
+.main-footer ul li  .dress::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 1px;
+    background-color: grey;
+    margin-top: 5px;
+    left: 50%;
+}
+
+.main-footer ul li  .dress::after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 1px;
+    background-color: grey;
+    margin-top: 5px;
+    left: 54.2%;
+}
+
+
+/*footer*/
+footer{
+    display: block;
+}
+
+footer .about::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}
+footer .about ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .about ul li {
+    width: 200px;
+    margin: 50px auto;
+}
+
+footer .about ul li{
+    text-align: center;
+}
+
+
+footer .about ul li h5{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 25px;
+}
+
+
+/*follow*/
+.about-c{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.about-c .follow{
+    margin-right: 400px;
+    font-size: 18px;
+}
+.about-c .follow i{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right:5px ;
+    color: black;
+}
+
+/*guide*/
+.about-c .guide ,.service , .coll{
+    margin-right: 70px;
+    font-size:18px ;
+}
+
+.about-c .guide a,.service a, .coll a{
+    text-decoration: none;
+    font-size: 15px;
+    color: grey;
+}
+
+/*for information*/
+.information{
+    width: 100%;
+    background-color: #e4e4e4;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.information div{
+    width: 35%;
+    margin-left: 200px;
+}
+
+.information div h6{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.information  a{
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    color: grey;
+}
+
+.information div a:hover{
+    color:orange;
+}
+
+/*info*/
+
+.info-1{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.info-1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.info-1 span{
+    color: white;
+}
